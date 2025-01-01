@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Least-Square-Method</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-card2.css">
+    <link rel="stylesheet" href="style-card3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.0/math.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/function-plot/dist/function-plot.min.js"></script>
+</head>
+<body>
+    <div id="head-decoration">
+        <div class="logos">
+            <div id="main-logo">
+                <a href="https://www.fe.rupp.edu.kh/program/7" target="_blank" rel="noopener noreferrer"><img id="ite-logo" src="img/ite-logo.png" alt="ITE_Logo"></a>
+            </div>
+            <div id="rupp-and-fe">
+                <div id="sub-fe-logo">
+                    <a href="https://www.fe.rupp.edu.kh/" target="_blank" rel="noopener noreferrer"><img id="fe-logo" src="img/fe-logo.png" alt="FE_Logo"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="horizontal-line"></div>
+        <div id="chapter-container">
+            <div id="vertical-line"></div>
+            <div id="chapter-number">6</div>
+            <h1 id="chapter">Orthogonality and Least Squares</h1>
+        </div>
+        <div id="container">
+            <br>
+            <div id="number-1">1</div>
+            <div id="number1-title">Team Members</div>
+            <div id="card1">
+
+                <div class="name">
+                    <div class="numberBox">1</div>
+                    <div class="nameBox" id="seavlang">ប៊ុន សៀវឡាង - Bun Seavlang</div>
+                </div>
+                <div class="name">
+                    <div class="numberBox">2</div>
+                    <div class="nameBox" id="lim">យីម សុខលីម - Yim Soklim</div>
+                </div>
+                <div class="name">
+                    <div class="numberBox">3</div>
+                    <div class="nameBox" id="jade-peakz">លឹម ហ្គេចពា័ក្ស - Lim Guecpeak</div>
+                </div>
+                <div class="name">
+                    <div class="numberBox">4</div>
+                    <div class="nameBox" id="samnang">វេត សំណាង - Veth Samnang</div>
+                </div>
+                <div class="name">
+                    <div class="numberBox">5</div>
+                    <div class="nameBox" id="sopheak">សល់ សុភ័ក្រ - Sol Sopheak</div>
+                </div>
+                <div class="name">
+                    <div class="numberBox">6</div>
+                    <div class="nameBox" id="choung">សេង វេងឈួង - Seng VengChhuong</div>
+                </div>
+                <div class="name">
+                    <div class="numberBox">7</div>
+                    <div class="nameBox" id="sreypich">សំ សុគន្ធស្រីពេជ្រ - Sam Sokunsreypich</div>
+                </div>
+                <div class="name">
+                    <div class="numberBox">8</div>
+                    <div class="nameBox" id="sopea">អ៊ុង សិរីសុភា - Ung Sereysopea</div>
+                    <div>(Developer)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="space"></div>
+
+    <!--Here is part 2-->
+    <div id="card2">
+        <div id="space1"></div>
+        <div id="least-square">
+            <div id="number-2">2</div>
+            <div id="number2-title">Least Square Problem</div>
+            <h2>6.6 EXERCISE 8</h2>
+            <p>A simple curve that often makes a good model for the variable
+                costs a company, as function of the sales level x, has the form
+            </p>
+            <div class="custom-select" style="width:200px;">
+                <select id="select">
+                  <option value="1">y = β₁x + β₂x² + β₃x³</option>
+                  <option value="2">y = β₁x + β₂x² + β₃x³</option>
+                  <option value="3">y = β₁x + β₂x² + β₃x³ + β₄x⁴</option>
+                  <option value="4">y = β₁x + β₂x² + β₃x³ + β₄x⁴ + β₅x⁵</option>
+                </select>
+            </div>
+            <p>There is no constant term because fixed costs are not included.</p>
+            <p><label for="input-ls-data"><b>[M]&nbsp;</b>Find the least-square curve of the form above
+                to fit the data:</label></p>
+                <textarea id="input-ls-data" name="input-ls-data" rows="4" cols="50">(4,1.58),(6,2.08),(8,2.5),(10,2.8),(12,3.1),(14,3.4),(16,3.8),(18,4.32)</textarea>
+            <script src="option.js"></script>
+            <div id="calculate-card2"><i class="fa-solid fa-calculator"></i> &nbsp;&nbsp;Calculate and Plot</div>
+            <div id="least-square-solution"></div>
+        </div>
+        <script src="least-square.js"></script>
+        <br>
+        <br>
+    </div>
+
+    <!--Here is part 3-->
+    <div id="card3">
+        <div id="space2"></div>
+        <div id="curve-fitting">
+            <div id="number-3">3</div>
+            <div id="number3-title">Curve-Fitting Problem</div>
+            <h2>6.6 EXERCISE 10</h2>
+            <p>Suppose radioactive substances A and B have decay constants of 0.2 and 0.7 
+                ,respectively. If a mixture of hese two substances at time t=0 contain M<sub>A</sub>
+                grams of A and M<sub>B</sub> grams of B, then a model for the total amount y of the
+                mixture present at time t is
+            </p>
+            <p><strong><span style="color:#FA4032;">y = M<sub>A</sub>e<sup>-.02t</sup> + M<sub>B</sub>e<sup>-.07t</sup></span></strong></p>
+            <p><label for="input-cf-data"><b>[M]&nbsp;</b>Find the Least-Square Curve and Plot The model and Data</label></p>
+            <p>Suppose the initial amounts M<sub>A</sub> and M<sub>B</sub> are unknown, but a scientist is able
+            to measure the total amounts present at serveral times and records the following points (t<sub><i>i</i></sub>,
+            y<sub><i>i</i></sub>):</p>
+                <textarea id="input-cf-data" name="input-ls-data" rows="4" cols="50">(10,21.34),(11,20.68),(12,20.05),(14,18.87),(15,18.30)</textarea>
+            <div id="calculate-card3"><i class="fa-solid fa-calculator"></i> &nbsp;&nbsp;Calculate and Plot</div>
+            <div id="curve-fitting-solution"></div>
+        </div>
+        <script src="curve-fitting.js"></script>
+        <br>
+        <br>
+    </div>
+    
+    
+    
+    
+</body>
+<script src="index.js"></script>
+</html>

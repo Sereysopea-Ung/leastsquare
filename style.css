@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #faffc5;
+}
+
+#head-decoration {
+    position: relative;
+}
+
+@keyframes slideInFromTop{
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 80px;
+    }
+}
+
+#main-logo{
+    position: absolute;
+    right: -60px;
+    z-index: 3;
+    transition: right 1s ease;
+}
+
+#sub-fe-logo{
+    position: absolute;
+    right: -40px;
+    z-index: 2;
+    transition: right 1s ease;
+}
+
+#sub-fe-logo:hover{
+    right: 20px;
+}
+
+#main-logo:hover{
+    right: 0px;
+}
+
+
+#ite-logo{
+    width: 80px;
+    border-left: 8px solid #5e586d;
+    border-bottom: 1px solid #3a3960;
+}
+
+#fe-logo{
+    width: 80px;
+    border-left: 8px solid #5e586d;
+    border-bottom: 1px solid #3a3960;
+    z-index: 2;
+}
+
+@keyframes logo{
+    0%{
+        right: -80px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+
+.logos{
+    position: absolute;
+    animation: logo;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    right: 0px;
+}
+
+
+#vertical-line{
+    position: absolute;
+    margin-left: 6vw;
+    width: 8px;
+    height: 200px;
+    background-color: #a9bfa8;
+    z-index: 1;
+}
+
+#horizontal-line{
+    animation-name: slideInFromTop;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+    height: 15px;
+    background-color: #5e686e;
+}
+
+@keyframes slideInFromLeft{
+    0%{
+        margin-left: -80px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+#chapter-container{
+    animation-name: slideInFromLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+#chapter-number{
+    position: absolute;
+    margin-top: 95px;
+    margin-left: calc(6vw + 8px);
+    width:100px;
+    height: 105px;
+    background-color: none;
+    z-index: 2;
+    border-bottom: 8px solid #a9bfa8;
+    text-align: center;
+    line-height: 105px;
+    font-family: nunito;
+    font-size: 110px;
+    font-weight: 1000px;
+    color: #3a3960
+}
+
+#chapter{
+    position: absolute;
+    margin-top: calc(95px);
+    margin-left: calc(6vw + 8px + 100px + 10px);
+    width: 260px;
+    height: 210px;
+    line-height: 50px;
+    background-color: none;
+    color:#3a3960;
+}
+
+#container{
+    width: 80%;
+    margin-top: 200px;
+    height: auto;
+    position: absolute;
+    background-color: none;
+    margin-left: 6vw;
+}
+
+#number-1{
+    position: absolute;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    line-height: 80px;
+    background-color: #3a3960;
+    color: #faffc5;
+    text-align: center;
+    z-index: 2;
+    font-family: nunito;
+    font-size: 40px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
+
+#number1-title{
+    position: absolute;
+    border-top-right-radius: 30px;
+    text-align: center;
+    width: 50%;
+    left: 80px;
+    background: linear-gradient(90deg, rgba(58,57,96,1) 0%, rgba(58,57,96,1) 23%, rgba(94,104,109,1) 100%);
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+    color: #faffc5;
+    font-family: nunito;
+    font-size: 25px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
+
+
+@keyframes showHeight{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 300px;
+    }
+}
+
+#card1{
+    padding: 50px 10px 0 50px;
+    animation: showHeight;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #EFE3C2;
+    top: 60px;
+    box-shadow: 5px 4px 2px -2px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+    border-image: linear-gradient(120deg, #3a3960 0%, #a9bfa8 70%, #3a3960 100%) 1;
+    border-width: 8px;
+    border-style: solid;
+}
+
+.numberBox{
+    font-family: khmer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: linear-gradient(0deg, #123524 0%, #3e7b27 50%, #85a947 100%);
+    border-width: 5px;
+    font-size: 20px;
+    color: #EFE3C2;
+}
+
+.nameBox{
+    font-family: khmer;
+    font-size: 16px;
+}
+
+#space{
+    width:100%;
+    height: 650px;
+}
+
+@media only screen and (max-width: 425px){
+    #chapter{
+        font-size: 20px;
+        width: 150px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #number1-title,#number2-title{
+        font-size: 10px;
+        width: 60%;
+    }
+    #card{
+        border-top-right-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    #number1-title,#number2-title{
+        left:80px;
+        width: calc(100%-80px);
+    }
+    #number-1{
+        border-top-right-radius: 0px;
+        left: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 1260px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 370px;
+        }
+    }
+    #card1{
+        height: 370px;
+    }
+}
+
+@media only screen and (max-width: 930px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 420px;
+        }
+    }
+    #card1{
+        height: 420px;
+    }
+    #space{
+        height: 750px;
+    }
+}
+
+@media only screen and (max-width: 735px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 500px;
+        }
+    }
+    #card1{
+        height: 500px;
+    }
+    #space{
+        height: 830px;
+    }
+}
+
+@media only screen and (max-width: 661px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 570px;
+        }
+    }
+    #card1{
+        height: 570px;
+    }
+    #space{
+        height: 900px;
+    }
+}
+
+@media only screen and (max-width: 612px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 750px;
+        }
+    }
+    #card1{
+        height: 750px;
+    }
+    #space{
+        height: 1080px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 790px;
+        }
+    }
+    #card1{
+        height: 790px;
+    }
+    #space{
+        height: 1120px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 870px;
+        }
+    }
+    #card1{
+        height: 870px;
+    }
+    #space{
+        height: 1200px;
+    }
+}
+
+@media only screen and (max-width: 369px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 870px;
+        }
+    }
+    #card1{
+        height: 930px;
+    }
+    #space{
+        height: 1260px;
+    }
+}
+
+@media only screen and (max-width: 346px){
+    @keyframes showHeight{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 1000px;
+        }
+    }
+    #card1{
+        height: 1000px;
+    }
+    #space{
+        height: 1330px;
+    }
+}

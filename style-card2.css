@@ -1,0 +1,139 @@
+#card2{
+    width: 100%;
+    height: auto;
+    background-color: #E1FFBB;
+
+
+}
+
+#space1{
+    width: 100%;
+    height: 80px;
+}
+
+#least-square{
+    width:80%;
+    margin: 0 6vw 0 6vw;
+    padding: 80px;
+    height:auto;
+    position:relative;
+    background-color: #EFE3C2;
+    box-shadow: 5px 4px 2px -2px rgba(0, 0, 0, 0.1);
+    border-image: linear-gradient(120deg, #001A6E 0%, #009990 70%, #074799 100%) 1;
+    border-width: 8px;
+    border-style: solid;
+}
+
+#number-2{
+    position: absolute;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    top:-50px;
+    line-height: 80px;
+    background-color: #001A6E;
+    color: #E1FFBB;
+    text-align: center;
+    z-index: 2;
+    font-family: nunito;
+    font-size: 40px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
+
+#number2-title{
+    position: absolute;
+    border-top-right-radius: 30px;
+    text-align: center;
+    width: 50%;
+    top: -50px;
+    left: 80px;
+    background: linear-gradient(90deg, #001A6E 0%, #001A6E 23%, #009990 100%);
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+    color: #faffc5;
+    font-family: nunito;
+    font-size: 25px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
+
+.custom-select {
+    position: relative;
+    font-family: nunito;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: #001A6E;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #074799;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  #input-ls-data{
+    width: 500px;
+    border-width: 8px;
+    border-image: linear-gradient(120deg, #001A6E 0%, #009990 70%, #074799 100%) 1;
+  }
+
+  #calculate-card2{
+    background-color: #001A6E;
+    width: 500px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color:#E1FFBB;
+  }
+
+  #calculate-card2:hover{
+    background-color: #009990;
+    cursor: pointer;
+  }

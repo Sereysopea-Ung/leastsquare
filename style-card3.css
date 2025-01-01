@@ -1,0 +1,81 @@
+#card3{
+    width: 100%;
+    height: auto;
+    background-color: #FEF3E2;
+
+
+}
+
+#space2{
+    width: 100%;
+    height: 80px;
+}
+
+#curve-fitting{
+    width:80%;
+    margin: 0 6vw 0 6vw;
+    padding: 80px;
+    height:auto;
+    position:relative;
+    background-color: #EFE3C2;
+    box-shadow: 5px 4px 2px -2px rgba(0, 0, 0, 0.1);
+    border-image: linear-gradient(120deg, #FA4032 0%, #FAB12F 70%, #FA812F 100%) 1;
+    border-width: 8px;
+    border-style: solid;
+}
+
+#number-3{
+    position: absolute;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    top:-50px;
+    line-height: 80px;
+    background-color: #FA4032;
+    color: #FEF3E2;
+    text-align: center;
+    z-index: 2;
+    font-family: nunito;
+    font-size: 40px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
+
+#number3-title{
+    position: absolute;
+    border-top-right-radius: 30px;
+    text-align: center;
+    width: 50%;
+    top: -50px;
+    left: 80px;
+    background: linear-gradient(90deg, #FA4032 0%, #FA812F 23%, #FAB12F 100%);
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+    color: #FEF3E2;
+    font-family: nunito;
+    font-size: 25px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
+
+
+  #input-cf-data{
+    width: 500px;
+    border-width: 8px;
+    border-image: linear-gradient(120deg, #FA4032 0%, #FAB12F 70%, #FA812F 100%) 1;
+  }
+
+  #calculate-card3{
+    background-color: #FA4032;
+    width: 500px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color:#FEF3E2;
+  }
+
+  #calculate-card3:hover{
+    background-color: #FA812F;
+    cursor: pointer;
+  }
