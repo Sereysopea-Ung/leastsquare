@@ -39,11 +39,10 @@ function calculate(){
         const result = math.multiply(invAtxAxAt,y_matrix);
         const [[Ma],[Mb]] = result.toArray();
 
-        console.log(Ma,Mb);
         solution_box_2.innerHTML= `<h2>Solution:</h2>
             <p>y = (${Ma})e<sup>-.02t</sup> + (${Mb})e<sup>-.07t</sup></p>
             <h3>Plot the graph that we find by least-square with data:</h3>
-            <div id="plot"></div>
+            <div id="plot2"></div>
             <style>
                 #plot circle {
                     r: 5;
@@ -66,7 +65,7 @@ function calculate(){
 
         // Create the plot
         functionPlot({
-            target: "#plot",
+            target: "#plot2",
             width: 800,
             height: 400,
             grid: true,
